@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Custom Button Flutter'),
+          title: Center(child: Text('Custom Button Flutter',style:TextStyle(
+            color: Colors.white),
+          ),
+          ),
+          backgroundColor: Colors.black,
         ),
+        backgroundColor:Colors.lightBlue ,
         body: Center(
           child: CustomButton(
             color: Colors.white, // Color for the button
@@ -39,16 +44,16 @@ class CustomButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 200,
-        height: 50,
+        width: 150,
+        height: 60,
         alignment: Alignment.center, // Center the child (title text)
         decoration: BoxDecoration(
           color: containerColor,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: Colors.black), // Border for the container
+          borderRadius: BorderRadius.circular(30),
+          border: Border.all(color: Colors.white), // Border for the container
         ),
         child: Text(
-          'Custom Button',
+          'Submit',
           style: TextStyle(
             color: color,
             fontWeight: FontWeight.bold,
