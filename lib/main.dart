@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Custom Button Example'),
+          title: Text('Custom Button Flutter'),
         ),
         body: Center(
           child: CustomButton(
-            color: Colors.blue, // Color for the button
-            containerColor: Colors.yellow, // Color for the container
+            color: Colors.white, // Color for the button
+            containerColor: Colors.black, // Color for the container
             onTap: () {
               // Handle button tap
               print('Button tapped!');
